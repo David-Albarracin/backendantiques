@@ -1,12 +1,13 @@
 
 package pro.ddsr.backendantiques.modules.coleccionistas.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
@@ -26,10 +27,11 @@ import pro.ddsr.backendantiques.modules.persona.entity.Persona;
 public class Coleccionistas {
 
     @Id
+         @Column(name = "coleccionistas_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
 
-     @ManyToOne
+   @OneToOne
     @JoinColumn(name = "persona_id")
     @NotNull(message = "No puede ser nulo")
     Persona personaId;

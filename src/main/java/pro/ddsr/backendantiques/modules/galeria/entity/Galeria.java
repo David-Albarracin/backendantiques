@@ -33,5 +33,5 @@ public class Galeria {
     @JoinColumn(name = "antiguedad_id")
     @NotNull(message = "No puede ser nulo")
     Antiguedades antiguedadId;
-
+    
 }

@@ -1,3 +1,5 @@
+![](https://raw.githubusercontent.com/David-Albarracin/README_MATERIALS/main/spring.png)
+
 # Spring Boot eCommerce API
 
 Este proyecto implementa una API para un sistema de comercio electrónico utilizando **Spring Boot**, con características como JPA, **Spring Security** y controladores RESTful conectados a una base de datos **MySQL**. La arquitectura sigue un enfoque orientado al dominio (DDD).
@@ -12,13 +14,14 @@ Este proyecto implementa una API para un sistema de comercio electrónico utiliz
 
 ## Diagrama entidad-relación
 
-![Diagrama entidad-relación](./sql/diagrama.png)
+![Diagrama entidad-relación](./sql/antiques_db.png)
 
 ## Comandos DDL para construir la estructura de la base de datos
 
 Aquí se incluyen los comandos para crear las tablas de la base de datos en **MySQL**. Los atributos de cada tabla se describen en los archivos SQL proporcionados:
 
 ```sql
+
 
 ```
 

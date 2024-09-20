@@ -31,6 +31,7 @@ import pro.ddsr.backendantiques.modules.sucursal.entity.Sucursal;
 public class Antiguedades {
 
     @Id
+    @Column(name = "antiguedades_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 

@@ -1,6 +1,7 @@
 
 package pro.ddsr.backendantiques.modules.transacciones.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -28,6 +29,7 @@ import pro.ddsr.backendantiques.modules.tipo_transaccion.entity.TipoTransaccion;
 public class Transacciones {
 
     @Id
+      @Column(name = "transacciones_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
 

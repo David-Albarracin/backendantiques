@@ -1,6 +1,7 @@
 
 package pro.ddsr.backendantiques.modules.ranking_antiguedad.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -27,6 +28,7 @@ import pro.ddsr.backendantiques.modules.antiguedades.entity.Antiguedades;
 public class RankingAntiguedad {
 
     @Id
+      @Column(name = "ranking_antiguedad_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
 
@@ -34,5 +36,8 @@ public class RankingAntiguedad {
     @JoinColumn(name = "antiguedades_id")
     @NotNull(message = "No puede ser nulo")
     Antiguedades antiguedadesId;
+
+    @Column(name = "puntaje")
+    private Number puntaje;
 
 }

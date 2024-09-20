@@ -1,6 +1,7 @@
 
 package pro.ddsr.backendantiques.modules.clase_contacto.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -22,6 +23,7 @@ import lombok.Setter;
 public class ClaseContacto {
 
     @Id
+     @Column(name = "clase_contacto_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
 
