@@ -27,4 +27,7 @@ public class ClaseContacto {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
 
+    @Column(name = "tipo_contacto")
+    private String tipoContacto;
+
 }

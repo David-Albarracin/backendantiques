@@ -33,4 +33,10 @@ public class Despachos {
     @JoinColumn(name = "transaccion_id")
     @NotNull(message = "No puede ser nulo")
     Transacciones transaccionId;
+
+    private String nombre;
+
+    private String telefono;
+
+
 }

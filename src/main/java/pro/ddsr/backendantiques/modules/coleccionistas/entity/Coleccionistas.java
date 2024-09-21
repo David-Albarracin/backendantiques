@@ -36,4 +36,7 @@ public class Coleccionistas {
     @NotNull(message = "No puede ser nulo")
     Persona personaId;
 
+    @Column(name = "descripcion")
+    private String descripcion;
+
 }

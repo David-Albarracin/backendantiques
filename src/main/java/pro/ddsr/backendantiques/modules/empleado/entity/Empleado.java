@@ -34,4 +34,6 @@ public class Empleado {
     @NotNull(message = "No puede ser nulo")
     Persona personaId;
 
+    private String name;
+
 }

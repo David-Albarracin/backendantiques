@@ -40,4 +40,7 @@ public class DetalleTransaccion {
     @NotNull(message = "No puede ser nulo")
     Transacciones transaccionId;
 
+    private Number cantidad;
+
+
 }

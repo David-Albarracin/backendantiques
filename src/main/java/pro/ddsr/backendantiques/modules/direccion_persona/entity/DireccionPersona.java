@@ -39,4 +39,11 @@ public class DireccionPersona {
     @JoinColumn(name = "persona_id")
     @NotNull(message = "No puede ser nulo")
     Persona personaId;
+
+    private String linea_1;
+
+    private String linea_2;
+
+    private String detalles;
+
 }

@@ -43,4 +43,12 @@ public class ContactoPersona {
     @NotNull(message = "No puede ser nulo")
     Persona personaId;
 
+    //@Column(name = "descripcion")
+    private String telefono;
+
+    private String nombre;
+
+    private String dni;
+
+
 }
